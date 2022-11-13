@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>building</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <nav class="navigation navbar navbar-light bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Navbar</a>
+          <div class="account">
+            <a href="#" class="link-dark me-2">signup</a>
+            <a href="#" ><button type="button" class="btn btn-dark btn-lg rounded-pill">&nbsp;login&nbsp;</button></a>
+          </div>
+        </div>
+      </nav>
+      <!--|^ up is navbar-->
+      <div class="container">
+        <div class="row">
+            <!--components-->
+            <div class=" pc-components col-md-6 col-12 text-center mt-5">
+                <!--graphics card-->
+                
+                  
+                    <select class="graphics-card form-select bg-secondary text-center  " aria-label="Default select example" onchange="graphics()">
+                      <option selected value="">select graphic-card</option>
+                      <option value="NVIDIA RTX 1660 TI">NVIDIA RTX 1660 TI</option>
+                      <option value="Nvidia RTX 3070">Nvidia RTX 3070</option>
+                      <option value=" Nvidia RTX 3060 Ti"> Nvidia RTX 3060 Ti</option>
+                    </select>
+                  <br><br>
+
+                  <select class="motherboard form-select bg-secondary text-center" onchange="motherboard()" aria-label="Default select example">
+                    <option selected value="">select a motherboard</option>
+                    <option value="ASUS PRIME A520M-A II">ASUS PRIME A520M-A II</option>
+                    <option value="MSI A320M-A PRO">MSI A320M-A PRO</option>
+                  </select>
+                  <br><br>
+                  
+                  <select class="processor form-select bg-secondary text-center" onchange="processor()" aria-label="Default select example">
+                    <option selected value="">select a processor</option>
+                    <option value="AMD RYZEN 7">AMD RYZEN 7</option>
+                    <option value="UNTEL I5">UNTEL I5</option>
+                    <option value="UNTEL I7">UNTEL I7</option>
+                  </select>
+                  <br><br>
+                
+                  <select class="storage form-select bg-secondary text-center" onchange="storage()" aria-label="Default select example">
+                    <option selected value="">select a storage</option>
+                    <option value="512GB SSD">512GB SSD</option>
+                    <option value="1TB HDD">1TB HDD</option>
+                  </select>
+                  <br><br>
+                  
+                  <select class="alimentation form-select bg-secondary text-center" onchange="alimentation()" aria-label="Default select example">
+                    <option selected value="">select a alimentation</option>
+                    <option value="a">aaaaaaa</option>
+                    <option value="b">bbbbbbbb</option>
+                    <option value="c">ccccccccc</option>
+                  </select>
+                  <br><br>
+                  
+                  <select class="casepc form-select bg-secondary text-center" onchange="casepc()" aria-label="Default select example">
+                    <option selected value="">select a case</option>
+                    <option value="plastic">plastic</option>
+                    <option value="steel">steel</option>
+                    <option value="pizza">pizza</option>
+                  </select>
+                  <br><br>
+
+                  <select class="ram form-select bg-secondary text-center" onchange="ram()" aria-label="Default select example">
+                    <option selected value="">select a ram</option>
+                    <option value="4GB">4GB</option>
+                    <option value="8GB">8GB</option>
+                    <option value="16GB">16GB</option>
+                  </select>
+                  <br>
+                  <label for="slots" class="text-light">number of ram slots</label>
+                  <input type="number" max="4" min="1" value="1" id="slots" onchange="ram()">
+            </div>
+            <div class="col-md-6 col-12 text-center mt-5">
+              <div class="progress ms-5 me-5 " id="bar">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="space"><br></div>
+              <button type="button" class="btn btn-primary btn-lg" id="save">save build</button>
+            </div>
+          </div>
+          <br>
+            
+        </div>
+      </div>
+
+    <!--this is footer-->
+      <footer class="bg-dark text-light text-center text-lg-start sticky-bottom">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-light" href="#">bokri.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <script src="build.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
